@@ -158,8 +158,12 @@ map <C-m> :MBEToggle<CR>
 
 " shift insert in gvim
 if has("gui_running")
-    map  <silent>  <S-Insert>  "+p
-    imap <silent>  <S-Insert>  <Esc>"+pa
+  map  <silent>  <S-Insert>  "+p
+  imap <silent>  <S-Insert>  <Esc>"+pa
 endif
 
-
+" set Monaco font in gvim
+set guifont=*                                                                   
+if has("gui_running")                                                           
+  set guifont=Monaco:h10                                                        
+endif
