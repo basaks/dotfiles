@@ -8,5 +8,5 @@
 ```
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
-3. Fire up `VIM` and do ':PluginInstall'
+3. Fire up `VIM` and do `:PluginInstall`
 4. Setup `YouCompleteME`.
