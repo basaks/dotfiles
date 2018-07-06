@@ -9,9 +9,18 @@
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 3. Fire up `VIM` and do `:PluginInstall`
-4. Setup `YouCompleteME`:
+
+4. Install `cmake` if required:
+
+```
+sudo apt get install cmake
+```
+
+5. Setup `YouCompleteME`:
+
 ```                                                                             
-cd ~/.vim/bundle/YouCompleteMe/                                                 
+cd ~/.vim/bundle/YouCompleteMe/                                     
+
 git submodule update --init --recursive                                         
 python install.py                                                               
 ``` 
