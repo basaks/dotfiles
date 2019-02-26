@@ -10,7 +10,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-Plugin 'sheerun/vim-polyglot3'
+Plugin 'sheerun/vim-polyglot'
 Plugin 'tmhedberg/SimpylFold'
 
 " auto-indentation
