@@ -1,0 +1,32 @@
+from __future__ import print_function
+import numpy as np
+import pylab as pl
+import datetime
+import scipy as sc
+import pandas as pd
+from scipy import stats
+from pylab import plot, show, hist, xlabel, ylabel, title, axis
+from os.path import expanduser
+import json
+import pickle
+from matplotlib import pyplot as plt
+
+try:
+    import os
+except ImportError:
+    print("Python shell enhancement modules not available.")
+else:
+    print("Python shell history and tab completion are enabled.")
+    print("numpy as np")
+    print('pylab as pl')
+    print('scipy as sc')
+    print('pandas as pd')
+    print('os as os')
+    print('scipy.stats as stats')
+    print('datetime as datetime')
+    print('expanduser')
+    print('plot3d(x,y,z)')
+    print('matplotlib.pyplot as plt')
+    print('json')
+    print('pickle')
+
