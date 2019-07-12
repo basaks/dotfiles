@@ -134,6 +134,7 @@ export LANG=en_AU.UTF-8
 export WORKON_HOME=$HOME/venvs
 source /usr/local/bin/virtualenvwrapper.sh
 
+if [ "$TERM" = xterm ]; then TERM=xterm-256color; fi
 
 stty -ixon
 
