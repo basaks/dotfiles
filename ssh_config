@@ -1,0 +1,26 @@
+Host gcp
+   Hostname xxx.xxx.xxx.x
+   Port 22
+   User username
+   IdentityFile ~/.ssh/id_rsa
+
+Host jumphost
+   Hostname xx.xxx.xxx.xxx
+   Port 22
+   User username
+   IdentityFile ~/.ssh/id_rsa
+
+Host anyname
+   Hostname xx.xxx.xx.xxx
+   Port 22
+   User username
+   IdentityFile ~/.ssh/id_rsa
+
+Host cm
+   Hostname 35.xxx.xx.xxx
+   Port 22
+   User username
+   IdentityFile ~/.ssh/id_rsa
+
+# multiple port forwarding on bastion
+# ssh -L 33337:127.0.0.1:22 -L 33340:127.0.0.1:8888 cm -fN
