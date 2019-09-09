@@ -113,7 +113,8 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
 alias pycharm='/home/sudipta/pycharm-community-2017.x.x/bin/pycharm.sh &'
-
+alias tmux="TERM=screen-256color-bce tmux"
+alias vpn='sudo /usr/sbin/openconnect vpn-url.com.au --authgroup auth-group-name'
 export PYTHONSTARTUP="$HOME/.pythonrc"
 export LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH
 
