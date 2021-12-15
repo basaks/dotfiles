@@ -92,6 +92,9 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+# xclip alias
+alias clipboard='xclip -sel clip'
+
 # function definitions
 function sync {
 /bin/bash /opt/sync.sh
