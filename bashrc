@@ -78,19 +78,13 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
 test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-alias ls='ls --color=auto'
-alias dir='dir --color=auto'
-alias vdir='vdir --color=auto'
-
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
+    if [ -e $HOME/.bash_aliases ]; then
+        source $HOME/.bash_aliases
+    fi
 fi
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+
+
 
 # function definitions
 function sync {
@@ -105,19 +99,18 @@ pyclean () {
 
 # Add an "alert" alias for long running commands. Use like so:
 # sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+#alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e \
+    '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-alias pycharm='/home/sudipta/pycharm-community-2017.x.x/bin/pycharm.sh &'
-alias tmux="TERM=screen-256color-bce tmux"
 
-# alias tmux='tmux -2'
+
 # set -g default-terminal "xterm-256color"
-alias vpn='sudo /usr/sbin/openconnect vpn-url.com.au --authgroup auth-group-name'
+
 export PYTHONSTARTUP="$HOME/.pythonrc"
 export LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH
 
