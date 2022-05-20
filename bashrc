@@ -86,6 +86,9 @@ fi
 
 
 
+# xclip alias
+alias clipboard='xclip -sel clip'
+
 # function definitions
 function sync {
 /bin/bash /opt/sync.sh
