@@ -1,3 +1,7 @@
+Host *
+   PubkeyAcceptedKeyTypes=+ssh-rsa
+   HostKeyAlgorithms=+ssh-rsa
+
 Host gcp
    Hostname xxx.xxx.xxx.x
    Port 22
